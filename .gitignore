@@ -49,3 +49,5 @@ Temporary Items
 # Archivos extras
 *.cfg
 mixture.json
+*.jade
+*.sass
