@@ -1,0 +1,58 @@
+.content-form
+  width: 100%
+  margin: 1.5em 0 1em 0
+  .formulario
+    width: 50%
+    margin: auto
+    .input-group
+      position: relative
+      margin-bottom: 2em
+      input[type="text"], input[type="email"], textarea
+        font-size: 1em
+        width: 100%
+        color: $negro
+        outline: none
+        padding: 15px
+        box-sizing: border-box
+        background: none
+        border: 0
+        border-bottom: 2px solid $negro
+        transition: .3s
+        &:focus, &:active
+          border-bottom-color: $azul
+        &.error
+          border-bottom-color: $rojo
+      #message
+        height: 150px
+        resize: none
+        font:
+          family: 'Open Sans', sans-serif
+          size: 0.8em
+      label
+        color: $negro
+        &.label
+          position: absolute
+          top: 1em
+          left: 0
+          font-size: 1em
+          line-height: 1em
+          margin-left: 1em
+          transition: all .3s ease
+          &.active
+            top: -1em
+            font-size: 12px
+            line-height: 12px
+            color: rgba($negro, 0.5)
+    input[type="submit"]
+      background: $azul
+      border-radius: 1px
+      cursor: pointer
+      display: inline-block
+      padding: 15px
+      text-transform: uppercase
+      color: $blanco
+      border: none
+      width: 100%
+      transition: .2s ease
+      &:hover
+        background: darken($azul, 20%)

@@ -1,0 +1,52 @@
+#slides
+  width: 100%
+  img
+    width: 100%
+  a
+    width: auto
+
+.slidesjs-pagination
+  background: #111
+  list-style: none
+  overflow: hidden
+  li
+    float: left
+    transition: .1s
+    a
+      display: inline-block
+      padding: 5.5px 20px
+      color: #c1c1c1
+      text-decoration: none
+    &:hover
+      background: $azul
+
+#slides .active
+  background: #222
+  &:hover
+    background: $azul
+
+.slidesjs-navigation
+  background: #111
+  color: #c1c1c1
+  text-decoration: none
+  display: inline-block
+  padding: 10px 20px 1px
+  float: left
+  transition: .1s
+  &:hover
+    background: $azul
+
+.slides
+  background: #111
+  img
+    opacity: 1
+    transition: .3s
+  &:hover img
+    opacity: .4s
+
+#slides [class^="icon-"]:before, #slides [class*="icon-"]:before
+  background: none
+  border-radius: 0% !important
+  color: $blanco
+  margin-right: 0px
+  padding: 0px
